@@ -1,0 +1,67 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="card"></style>
+    
+    <style name="card.header_inner_title">
+        <item name="android:layout_marginTop">@dimen/card_header_inner_title_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/card_header_inner_title_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/card_header_inner_title_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/card_header_inner_title_margin_right</item>
+        <item name="android:textSize">@dimen/card_header_inner_title_size</item>
+    </style>
+    
+    <style name="card.header_outer_layout">
+        <item name="android:layout_marginTop">@dimen/card_header_outer_view_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/card_header_outer_view_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/card_header_outer_view_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/card_header_outer_view_margin_right</item>
+    </style>
+    
+    <!-- Button Overflow in Header -->
+    <style name="card.header_button_overflow" >
+        <item name="android:background">@drawable/card_menu_button_rounded_overflow</item>
+        <item name="android:layout_marginRight">@dimen/card_header_button_overflow_margin_right</item>
+    </style>
+    
+    <!-- Other Button in Header -->
+    <style name="card.header_button_other">
+	<item name="android:background">@drawable/card_menu_button_overflow</item>
+    </style>
+    
+    <style name="card.content_title_layout">
+        <item name="android:layout_marginTop">@dimen/card_content_title_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/card_content_title_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/card_content_title_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/card_content_title_margin_right</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/card_text_color_content_title</item>
+    </style>
+    
+    <style name="card.content_subtitle_layout">
+        <item name="android:layout_marginTop">@dimen/card_content_subtitle_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/card_content_subtitle_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/card_content_subtitle_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/card_content_subtitle_margin_right</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/card_text_color_content_subtitle</item>
+    </style>
+
+</resources>

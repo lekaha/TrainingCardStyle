@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the Header Layout
+     If you customize your header layout, if you want to preserve built-in feature use same IDs.
+    -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true">
+
+    <!-- This is the Inner Content Header which you can populate runtime
+         with setupInnerViewElements(android.view.ViewGroup, android.view.View) method in CardHeader class.-->
+    <FrameLayout
+        android:id="@+id/card_header_inner_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <TextView 
+            style="@style/card.header_inner_title"
+            android:id="@+id/card_header_inner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              />
+    </FrameLayout>
+
+
+    <!-- This is the Button Frame.
+         You can custom its behaviour with some methods in CardHeader class -->
+    <FrameLayout
+        android:id="@+id/card_header_button_frame"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- overflow button. It has a Popup Menu -->
+        <ImageButton
+            android:id="@+id/card_header_button_overflow"
+            style="@style/card.header_button_overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imageview_contentDescription"
+            />
+        
+        <!-- Other button. -->
+        <ImageButton
+            android:id="@+id/card_header_button_other"
+            style="@style/card.header_button_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imageview_contentDescription"/>
+        
+    </FrameLayout>
+
+</RelativeLayout>
